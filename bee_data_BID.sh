@@ -1,5 +1,9 @@
+#!/bin/bash
+#
+
 ################################## 
 # Author: Katja C. Seltmann
+# ORCID: 0000-0001-5354-6048
 # Email: enicospilus@gmail
 # Start Date: November, 2020
 # Last code update: October, 2022
@@ -7,20 +11,32 @@
 # bee_counts.txt - number of unique records per family, and collection
 ################################## 
 
+set -xe
+
+download() {
+  curl https://depot.globalbioticinteractions.org/snapshot/target/data/tsv/interactions.tsv.gz > interactions.tsv.gz
+} 
+
+interactions() {
+  cat interactions.tsv.gz | gunzip
+}
+
+echo Downloading latest snapshot
+download
 
 echo Creating headers
-head -1  data/interactions.tsv > Andrenidae_data.tsv
-head -1  data/interactions.tsv > Apidae_data.tsv
-head -1  data/interactions.tsv > Colletidae_data.tsv
-head -1  data/interactions.tsv > Halictidae_data.tsv
-head -1  data/interactions.tsv > Megachilidae_data.tsv
-head -1  data/interactions.tsv > Melittidae_data.tsv
-head -1  data/interactions.tsv > Stenotritidae_data.tsv
+interactions | head -1  > Andrenidae_data.tsv
+interactions | head -1  > Apidae_data.tsv
+interactions | head -1  > Colletidae_data.tsv
+interactions | head -1  > Halictidae_data.tsv
+interactions | head -1  > Megachilidae_data.tsv
+interactions | head -1  > Melittidae_data.tsv
+interactions | head -1  > Stenotritidae_data.tsv
 
 #find all Andrenidae and write one file with all data and a second file only with unique records
 
 echo Finding all Andrenidae
-cat  data/interactions.tsv | grep -w "Andrenidae" >> Andrenidae_data.tsv
+interactions | grep -w "Andrenidae" >> Andrenidae_data.tsv
 wc -l Andrenidae_data.tsv
 
 echo Sorting unique records
@@ -31,7 +47,7 @@ wc -l Andrenidae_data_unique.tsv >> bee_counts.txt
 #find all Apidae and write one file with all data and a second file only with unique records
 
 echo Finding all Apidae
-cat  data/interactions.tsv | grep -w "Apidae" >> Apidae_data.tsv
+interactions | grep -w "Apidae" >> Apidae_data.tsv
 wc -l Apidae_data.tsv
 
 echo Sorting unique records
@@ -42,7 +58,7 @@ wc -l Apidae_data_unique.tsv >> bee_counts.txt
 #find all Colletidae and write one file with all data and a second file only with unique records
 
 echo Finding all Colletidae
-cat  data/interactions.tsv | grep -w "Colletidae" >> Colletidae_data.tsv
+interactions | grep -w "Colletidae" >> Colletidae_data.tsv
 wc -l Colletidae_data.tsv
 
 echo Sorting unique records
@@ -53,7 +69,7 @@ wc -l Colletidae_data_unique.tsv >> bee_counts.txt
 #find all Halictidae and write one file with all data and a second file only with unique records
 
 echo Finding all Halictidae
-cat  data/interactions.tsv | grep -w "Halictidae" >> Halictidae_data.tsv
+interactions | grep -w "Halictidae" >> Halictidae_data.tsv
 wc -l Halictidae_data.tsv
 
 echo Sorting unique records
@@ -64,7 +80,7 @@ wc -l Halictidae_data_unique.tsv >> bee_counts.txt
 #find all Megachilidae and write one file with all data and a second file only with unique records
 
 echo Finding all Megachilidae
-cat  data/interactions.tsv | grep -w "Megachilidae" >> Megachilidae_data.tsv
+interactions | grep -w "Megachilidae" >> Megachilidae_data.tsv
 wc -l Megachilidae_data.tsv
 
 echo Sorting unique records
@@ -75,7 +91,7 @@ wc -l Megachilidae_data_unique.tsv >> bee_counts.txt
 #find all Melittidae and write one file with all data and a second file only with unique records
 
 echo Finding all Melittidae
-cat  data/interactions.tsv | grep -w "Melittidae" >> Melittidae_data.tsv
+interactions | grep -w "Melittidae" >> Melittidae_data.tsv
 wc -l Melittidae_data.tsv
 
 echo Sorting unique records
@@ -86,7 +102,7 @@ wc -l Melittidae_data_unique.tsv >> bee_counts.txt
 #find all Stenotritidae and write one file with all data and a second file only with unique records
 
 echo Finding all Stenotritidae
-cat  data/interactions.tsv | grep -w "Stenotritidae" >> Stenotritidae_data.tsv
+interactions | grep -w "Stenotritidae" >> Stenotritidae_data.tsv
 wc -l Stenotritidae_data.tsv
 
 echo Sorting unique records
@@ -109,7 +125,7 @@ cat indexed_interactions_bees.tsv | cut -f88 | sort > citation_out.tsv
 cat citation_out.tsv | uniq -c > uniq_citations.tsv
 
 # #number of observations per unique species of plant
-# cat  data/interactions.tsv | grep -w "Plantae" > floral_hosts_all.tsv
+# interactions | grep -w "Plantae" > floral_hosts_all.tsv
 # cat floral_hosts_all.tsv | cut -f62,63,54,52,48,43 | sort > plant.tsv
 # cat  plant.tsv | grep -w "Plantae" > floral_hosts_all.tsv
 # tr '[:upper:]' '[:lower:]' < floral_hosts_all.tsv > floral_hosts_lower.tsv
@@ -117,7 +133,7 @@ cat citation_out.tsv | uniq -c > uniq_citations.tsv
 # cat species_family.tsv | uniq -c | sort -r > uniq_species.tsv
 #
 # #number of unique bee species per unique plant
-# cat  data/interactions.tsv | grep -w "Plantae" > floral_hosts_all.tsv
+# interactions | grep -w "Plantae" > floral_hosts_all.tsv
 # #cat floral_hosts_all.tsv | cut -f3,4,12,14,43,44,52,54,62 | sort > plants_bees.tsv
 # #cat plants_bees.tsv | grep -w "Plantae" > floral_hosts_and_bees_all.tsv
 # # tr '[:upper:]' '[:lower:]' < floral_hosts_all.tsv > floral_hosts_all.tsv
