@@ -158,7 +158,7 @@ Duplicate records occur in the database because more than one provider shares in
 
 
 ### Included files
-- 1-GBID-statistics.csv - number of interaction records by date per family
+- GBID-statistics.csv - number of interaction records by date per family
 - bee_data_BID.sh - script for separating bee records from the GloBI database interactions.tsv file
 - interactions.tsv.gz - snapshot of the GloBI database from January 18, 2024
 - indexed_interactions_bees.tsv.zip - bee records from the GloBI database on January 18, 2024
