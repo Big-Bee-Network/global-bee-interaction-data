@@ -1,6 +1,7 @@
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10552937.svg)](https://doi.org/10.5281/zenodo.10552937)
+Last modified: January 23, 2024
+Version v3.0
 
-Last modified: January 22, 2023
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10552937.svg)](https://doi.org/10.5281/zenodo.10552937)
 
 ## Global Bee Interaction Dataset
 [```Introduction```](#introduction) / [```Data Description```](#data-description) / [```Citation```](#citation) / [```Metrics```](#metrics) /  [```Included Resources```](#included-resources) /  [```References```](#references) /  [```Acknowledgements```](#acknowledgements)
