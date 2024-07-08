@@ -187,7 +187,7 @@ Ascher, J. S. and J. Pickering (2020) Discover Life bee species guide and world 
 
 <p align="center">
   <img src="https://github.com/globalbioticinteractions/logo/blob/main/globi_72x72.png?raw=true" width="72">
-  <img src="https://big-bee.net/images/UC_Santa_Barbara_Wordmark_Navy_RGB.png" width="200">
+  <img src="https://big-bee.net/images/UC_Santa_Barbara_Wordmark_Navy_RGB.png" width="400">
   <img src="https://big-bee.net/images/NSF_4-Color_bitmap_Logo-small.png" width="72">
   <img src="https://raw.githubusercontent.com/Big-Bee-Network/logos/main/bigbee-small.jpg" width="72">
 </p>
