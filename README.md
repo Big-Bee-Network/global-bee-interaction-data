@@ -41,7 +41,7 @@ Summary statistics about the dataset can be found in the bees-only-review.pdf fi
 |1|sourceCitation|
 |219440|Symbiota Collections of Arthropods Network (SCAN)|
 |156437|University of Kansas Natural History Museum|
-|150780|Digital Bee Collections Network, 2014 (and updates). Version: 2015-03-18. National Science Foundation grant DBI 0956388; PBI: Phytophagous Insects as a Model Group for Documenting Planetary Biodiversity (Insecta: Heteroptera: Miridae: Orthotylinae, Phylinae). Version: 08 Mar 2016. National Science Foundation grant DBI#0316495; Tri-Trophic Thematic Collection Network, 2014 (and updates). Version: 08 Mar 2016. http://tcn.amnh.org/. National Science Foundation grant(s) EF#1115081, EF#1115103, EF#1115080, EF#1115144, EF#1115191, EF#1115104, EF#1115115|
+|150780|Digital Bee Collections Network, 2014 (and updates). Version: 2015-03-18. National Science Foundation grant DBI#0956388 |
 |134657|USGS Biodiversity Information Serving Our Nation (BISON) IPT|
 |126820|http://iNaturalist.org is a place where you can record what you see in nature, meet other nature lovers, and learn about the natural world.|
 |44522|PaDIL Bee records from the Pests and Diseases Image Library, http://www.padil.gov.au.|
@@ -176,6 +176,9 @@ Poelen JH, Simons JD, Mungall CJ (2014). Global Biotic Interactions: An open inf
 Seltmann KC, Allen J, Brown BV, Carper A, Engel MS, Franz N, Gilbert E, Grinter C, Gonzalez VH, Horsley P, Lee S, Maier C, Miko I, Morris P, Oboyski P, Pierce NE, Poelen J, Scott VL, Smith M, Talamas EJ, Tsutsui ND, Tucker E (2021) Announcing Big-Bee: An initiative to promote understanding of bees through image and trait digitization. Biodiversity Information Science and Standards 5: e74037. [https://doi.org/10.3897/biss.5.74037](https://doi.org/10.3897/biss.5.74037)
 
 Poelen, JS & Seltmann, KS (2024) Bees Only Please: Bees Only Please: Selecting Hundreds of Thousands of Possible Bee Interactions Using a Laptop, Open Datasets, and Small (but Mighty) Commandline Tools. [https://www.globalbioticinteractions.org/2024/06/07/bees-only-please](https://www.globalbioticinteractions.org/2024/06/07/bees-only-please)
+
+Ascher, J. S. and J. Pickering (2020) Discover Life bee species guide and world checklist (Hymenoptera: Apoidea: Anthophila).
+[http://www.discoverlife.org/mp/20q?guide=Apoidea_species](http://www.discoverlife.org/mp/20q?guide=Apoidea_species).
 
 ### Acknowledgements
 
