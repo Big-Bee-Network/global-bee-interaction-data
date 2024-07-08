@@ -2,9 +2,7 @@ Last modified: July 3, 2024
 
 Version v4.0
 
-For additional files and datasets see:
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.12639658.svg)](https://doi.org/10.5281/zenodo.12639658)
-
 
 ## Global Bee Interaction Dataset
 [```Introduction```](#introduction) / [```Data Description```](#data-description) / [```Citation```](#citation) / [```Metrics```](#metrics) /  [```Included Resources```](#included-resources) /  [```References```](#references) /  [```Acknowledgements```](#acknowledgements)
@@ -158,6 +156,9 @@ Summary statistics about the dataset can be found in the bees-only-review.pdf fi
 
 
 ### Included files
+Data files are found on the related Zenodo publication:
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.12639658.svg)](https://doi.org/10.5281/zenodo.12639658)
+
 - bee_data_BID.sh - script for separating bee records into family
 - uniq_citations.tsv - list of unique citations indicating bee interactions
 - Andrenidae_data_unique.tsv - Andrenidae records    
