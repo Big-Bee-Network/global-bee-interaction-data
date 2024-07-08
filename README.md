@@ -2,7 +2,8 @@ Last modified: July 3, 2024
 
 Version v4.0
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10552937.svg)](https://doi.org/10.5281/zenodo.10552937)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.12639658.svg)](https://doi.org/10.5281/zenodo.12639658)
+
 
 ## Global Bee Interaction Dataset
 [```Introduction```](#introduction) / [```Data Description```](#data-description) / [```Citation```](#citation) / [```Metrics```](#metrics) /  [```Included Resources```](#included-resources) /  [```References```](#references) /  [```Acknowledgements```](#acknowledgements)
@@ -169,7 +170,7 @@ Summary statistics about the dataset can be found in the bees-only-review.pdf fi
 - bees-only-review.pdf - Review of all bee data indexed by Global Biotic Interactions using GloBI’s Interaction Data Review Report Framework via repository [select-bee-interactions.sh](https://github.com/Big-Bee-Network/select-bee-interactions.sh).
 
 ### References
-GloBI Community. (2024). Global Biotic Interactions: Interpreted Data Products hash://md5/946f7666667d60657dc89d9af8ffb909 hash://sha256/4e83d2daee05a4fa91819d58259ee58ffc5a29ec37aa7e84fd5ffbb2f92aa5b8 (0.7) [Data set]. Zenodo. (https://doi.org/10.5281/zenodo.11552565)[https://doi.org/10.5281/zenodo.11552565]
+GloBI Community. (2024). Global Biotic Interactions: Interpreted Data Products hash://md5/946f7666667d60657dc89d9af8ffb909 hash://sha256/4e83d2daee05a4fa91819d58259ee58ffc5a29ec37aa7e84fd5ffbb2f92aa5b8 (0.7) [Data set]. Zenodo. [https://doi.org/10.5281/zenodo.11552565](https://doi.org/10.5281/zenodo.11552565)
 
 Poelen JH, Simons JD, Mungall CJ (2014). Global Biotic Interactions: An open infrastructure to share and analyze species-interaction datasets. Ecological Informatics. [https://doi.org/10.1016/j.ecoinf.2014.08.005](https://doi.org/10.1016/j.ecoinf.2014.08.005)
 
