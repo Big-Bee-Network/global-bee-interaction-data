@@ -22,7 +22,7 @@ Dataset column name definitions [https://api.globalbioticinteractions.org/intera
 
 Duplicate records occur in the database because more than one provider shares information. This is most frequently occuring in museum specimen data and duplicates can be identified evaluating the institutionCode, collectionCode and catalogNumber fields. The file catalogNumber_counts.tsv groups records by these three fields for this dataset, but does not filter out duplicate records. Additionally, this dataset includes the citation information provided by the data publisher. The provided sourceCitation may not include information about the primary provider (often the natural history collection) the specimen data originates and the catalogNumber should be referenced to understand the original source of the data.
 
-Summary statistics about the dataset can be found in the bees-only-review.pdf file. This review of all bee data indexed by Global Biotic Interactions was created using GloBI’s Interaction Data Review Report Framework via repository (select-bee-interactions.sh)[https://github.com/Big-Bee-Network/select-bee-interactions.sh].
+Summary statistics about the dataset can be found in the bees-only-review.pdf file. This review of all bee data indexed by Global Biotic Interactions was created using GloBI’s Interaction Data Review Report Framework via repository [select-bee-interactions.sh](https://github.com/Big-Bee-Network/select-bee-interactions.sh).
 
 ### Metrics
 | Date | Andrenidae | Apidae | Colletidae | Halictidae | Megachilidae | Melittidae | Stenotritidae | Total bee records |
@@ -165,8 +165,8 @@ Summary statistics about the dataset can be found in the bees-only-review.pdf fi
 - Megachilidae_data_unique.tsv - Megachilidae records    
 - Melittidae_data_unique.tsv - Melittidae records
 - Stenotritidae_data_unique.tsv - Stenotritidae records
-- bees-only-interactions.tsv.zip - list of all bee interaction data indexed on Global Biotic Interactions from GloBI version 2024-06-07 produced by (select-bee-interactions.sh)[https://github.com/Big-Bee-Network/select-bee-interactions.sh]
-- bees-only-review.pdf - Review of all bee data indexed by Global Biotic Interactions using GloBI’s Interaction Data Review Report Framework via repository (select-bee-interactions.sh)[https://github.com/Big-Bee-Network/select-bee-interactions.sh].
+- bees-only-interactions.tsv.zip - list of all bee interaction data indexed on Global Biotic Interactions from GloBI version 2024-06-07 produced by [select-bee-interactions.sh](https://github.com/Big-Bee-Network/select-bee-interactions.sh).
+- bees-only-review.pdf - Review of all bee data indexed by Global Biotic Interactions using GloBI’s Interaction Data Review Report Framework via repository [select-bee-interactions.sh](https://github.com/Big-Bee-Network/select-bee-interactions.sh).
 
 ### References
 GloBI Community. (2024). Global Biotic Interactions: Interpreted Data Products hash://md5/946f7666667d60657dc89d9af8ffb909 hash://sha256/4e83d2daee05a4fa91819d58259ee58ffc5a29ec37aa7e84fd5ffbb2f92aa5b8 (0.7) [Data set]. Zenodo. (https://doi.org/10.5281/zenodo.11552565)[https://doi.org/10.5281/zenodo.11552565]
@@ -183,7 +183,6 @@ Poelen, JS & Seltmann, KS (2024) Bees Only Please: Bees Only Please: Selecting H
   <img src="https://github.com/globalbioticinteractions/logo/blob/main/globi_72x72.png?raw=true" width="72">
   <img src="http://big-bee.net/images/UC_Santa_Barbara_Wordmark_Navy_RGB.png" width="200">
   <img src="http://big-bee.net/images/NSF_4-Color_bitmap_Logo-small.png" width="72">
-  <img src="http://big-bee.net/images/logo.png" width="72">
 </p>
 
 This project is supported by the National Science Foundation. Award numbers: <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2102006">2102006</a>, <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2101929">2101929</a>, <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2101908">2101908</a>, <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2101876">2101876</a>, <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2101875">2101875</a>, <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2101851">2101851</a>, <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2101345">2101345</a>, <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2101913">2101913</a>, <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2101891">2101891</a> and <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2101850">2101850</a>.
