@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # Define input and output files
-input_file="/Volumes/IMAGES/globi-data-backups/reviews/2024-Oct-18/interactions.tsv"
-output_file="data/filtered_file.tsv"
+input_file="/Volumes/IMAGES/globi-data-backups/reviews/2025-Jan-09/interactions.tsv"
+output_file="data/globi-bees-filtered_file.tsv"
 temp_file="data/temp_filtered_file.tsv"
 count_file="data/family_counts.tsv"
 
@@ -19,13 +19,16 @@ grep -E -i "$search_words" "$input_file" > "$temp_file"
 sort "$temp_file" | uniq >> "$output_file"
 
 # Initialize the count file with a header
-echo -e "Family\tCount" > "$count_file"
+echo "Family\tCount" > "$count_file"
 
 # Count occurrences of each family name and write to the count file
 for family in Andrenidae Apidae Colletidae Halictidae Megachilidae Melittidae Stenotritidae; do
     count=$(grep -i "$family" "$temp_file" | wc -l)
-    echo -e "$family\t$count" >> "$count_file"
+    echo "$family\t$count" >> "$count_file"
 done
 
 # Remove the temporary file
 rm "$temp_file"
+
+# create archive
+gzip data/globi-bees-filtered_file.tsv
