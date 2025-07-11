@@ -5,7 +5,7 @@
 
 set -x
 
-cat indexed-names-resolved-bees.tsv.gz\
+cat bee-names.tsv.gz\
  | gunzip\
  | cut -f7\
  | tail -n+2\
@@ -18,7 +18,7 @@ cat globi-namespaces-with-bee-names.log\
  > globi-review-ids-with-bee-names.log 
 
 cat globi-review-ids-with-bee-names.log\
- head -1\
+ | head -1\
  | xargs -I{} bash -c 'curl "https://zenodo.org/records/{}/files/indexed-interactions.tsv.gz" | gunzip | head -1 | gzip'\
  > indexed-interactions-for-datasets-mentioning-bees.tsv.gz
 
