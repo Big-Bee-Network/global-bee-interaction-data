@@ -1,9 +1,11 @@
 #/bin/bash
 #
-# select bee interactions from datasets mentioning bees
+# concatenate interactions from datasets mentioning bees
 #
 
-cat indexed-names-resolved-all.tsv.gz\
+set -x
+
+cat indexed-names-resolved-bees.tsv.gz\
  | gunzip\
  | cut -f7\
  | tail -n+2\
@@ -18,11 +20,11 @@ cat globi-namespaces-with-bee-names.log\
 cat globi-review-ids-with-bee-names.log\
  head -1\
  | xargs -I{} bash -c 'curl "https://zenodo.org/records/{}/files/indexed-interactions.tsv.gz" | gunzip | head -1 | gzip'\
- > bee-interactions.tsv.gz
+ > indexed-interactions-for-datasets-mentioning-bees.tsv.gz
 
 cat globi-review-ids-with-bee-names.log\
  | xargs -I{} bash -c 'curl "https://zenodo.org/records/{}/files/indexed-interactions.tsv.gz" | gunzip | tail -n+2 | gzip'\
- >> bee-interactions.tsv.gz
+ >> indexed-interactions-for-datasets-mentioning-bees.tsv.gz
 
 
 

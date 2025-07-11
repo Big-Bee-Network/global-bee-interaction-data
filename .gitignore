@@ -7,3 +7,4 @@ csv/
 tsv/
 select-bee-interactions.sh
 *.txt
+*.tsv.gz
