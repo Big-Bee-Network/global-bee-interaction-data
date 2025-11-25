@@ -1,8 +1,9 @@
-Last modified: January 9, 2025
+Last modified: November 25, 2025
 
-Version v5.0
+Version v6.0
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14624975.svg)](https://doi.org/10.5281/zenodo.14624975)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17715382.svg)](https://doi.org/10.5281/zenodo.17715382)
+
 
 ## Global Bee Interaction Dataset
 [```Introduction```](#introduction) / [```Data Description```](#data-description) / [```Citation```](#citation) / [```Metrics```](#metrics) /  [```Included Resources```](#included-resources) /  [```References```](#references) /  [```Acknowledgements```](#acknowledgements)
@@ -11,7 +12,7 @@ Version v5.0
 This dataset comprises all bee interactions indexed by [Global Biotic Interactions](https://www.globalbioticinteractions.org) (GloBI; Poelen et al. 2014). It is published quarterly by the [Big Bee Project](http://big-bee.net) (Seltmann et al. 2021) to summarize all available knowledge about bee interactions from natural history collection, and community science observations (i.e., iNaturalist), and the literature. Interactions include flower visitation, parasitic interactions (mite, viral), lecty, and many others.
 
 ### Citation
-Seltmann, K. C., Poelen, J. H., & Global Biotic Interaction Community. (2025). Global Bee Interaction Data [Data set]. Zenodo. https://doi.org/10.5281/zenodo.14624975
+Seltmann, K. C., Poelen, J. H., & Global Biotic Interaction Community. (2025). Global Bee Interaction Data (v6.0) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.17715382
 
 ### Data Description
 Please see the [integration process page](https://www.globalbioticinteractions.org/process) to better understand how Global Biotic Interactions combines datasets from various sources. The complete interaction dataset for all species can be accessed via [https://www.globalbioticinteractions.org/data](https://www.globalbioticinteractions.org/data).
