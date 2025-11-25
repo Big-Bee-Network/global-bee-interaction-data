@@ -1,7 +1,7 @@
 #/bin/sh
 # list up to 600 (3 pages of 200 results) most recent GloBI dataset reviews
 # paging to avoid timeouts of Zenodo API
-#
+# run with bash
 # needs jq
 
 cat\

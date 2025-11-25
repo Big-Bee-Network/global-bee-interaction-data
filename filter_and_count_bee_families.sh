@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Define input and output files
-input_file="/Volumes/IMAGES/globi-data-backups/reviews/2025-Jan-09/interactions.tsv"
+input_file="data/interactions.tsv"
 output_file="data/globi-bees-filtered_file.tsv"
 temp_file="data/temp_filtered_file.tsv"
 count_file="data/family_counts.tsv"
